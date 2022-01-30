@@ -14,10 +14,10 @@ function App({ history, onSignIn }) {
       <StylesProvider generateClassName={generateClassName}>
         <Router history={history}>
           <Switch>
-            <Route exact path="/signup">
+            <Route exact path="/auth/signup">
               <SignUp onSignIn={onSignIn} />
             </Route>
-            <Route exact path="/signin">
+            <Route exact path="/auth/signin">
               <SignIn onSignIn={onSignIn} />
             </Route>
           </Switch>
